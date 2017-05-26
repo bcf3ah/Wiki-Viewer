@@ -1,0 +1,31 @@
+body {
+  background-color: #c5cae9;
+}
+
+.destroy {
+  display: none;
+}
+
+.searchBox {
+  position: relative;
+  bottom: 80px;
+  -webkit-transition: all 2s;
+  -moz-transition: all 2s;
+  -o-transition: all 2s;
+  transition: all 2s;
+}
+
+.animateDown {
+  transform: translateY(100px);
+  opacity: 0;
+}
+
+.searchForm {
+  position: relative;
+  bottom: 150px;
+  opacity: 0;
+  -webkit-transition: all 2s;
+  -moz-transition: all 2s;
+  -o-transition: all 2s;
+  transition: all 2s;
+}

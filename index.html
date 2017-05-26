@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Wiki Viewer</title>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+		<link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+		<div class="container">
+   <div class="row">
+     <div class="col s6 offset-s3 center-align">
+       <h1>Wiki Viewer</h1>
+       <br />
+       <div class="searchForm">
+         <form style="background-color: white;">
+           <div class="input-field">
+             <input id="searchInput" type="search" required>
+             <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+           </div>
+         </form>
+       </div>
+       <div class="searchBox">
+           <a id='searchButton' class="btn btn-floating btn-large cyan pulse"><i class="material-icons">search</i></a>
+           <p>Search for a specific Wiki entry</p>
+           <hr />
+           <br />
+         <a class="btn btn-floating btn-large cyan pulse" href="https://en.wikipedia.org/wiki/Special:Random" target="_blank"><i class="material-icons">shuffle</i></a>
+           <p>Or get a random one</p>
+       </div>
+     </div>
+     <div class="col s8 offset-s2">
+         <ul id="resultsList" class="collection">
+
+         </ul>
+       </div>
+   </div>
+</div>
+
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+	<script src="index.js"></script>
+  </body>
+</html>
